@@ -17,15 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-
-def home(request):
-    return HttpResponse("HOME")
-
-def sobre(request):
-    return HttpResponse("SOBRE")
-
-def contato(request):
-    return HttpResponse("CONTATO")
+from developer_erick.views import home
+from developer_erick.views import sobre
+from developer_erick.views import contato
 
 
 urlpatterns = [
